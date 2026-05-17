@@ -2,107 +2,71 @@
 
 export default function Home() {
   return (
-    <main
+    <div
       style={{
-        background: "#050816",
-        color: "white",
+        backgroundColor: "#050816",
         minHeight: "100vh",
-        padding: "30px",
+        color: "white",
+        padding: "40px",
         fontFamily: "Arial",
       }}
     >
-      <nav
+      <h1 style={{ color: "#f59e0b", fontSize: "50px" }}>
+        HardinBitcoin
+      </h1>
+
+      <button
         style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          marginBottom: "50px",
+          background: "#f59e0b",
+          color: "black",
+          padding: "15px 25px",
+          border: "none",
+          borderRadius: "10px",
+          fontWeight: "bold",
+          marginTop: "20px",
         }}
       >
-        <h1 style={{ color: "#f59e0b", fontSize: "32px" }}>
-          HardinBitcoin
-        </h1>
+        Connect Wallet
+      </button>
 
-        <button
-          style={{
-            background: "#f59e0b",
-            color: "black",
-            border: "none",
-            padding: "12px 24px",
-            borderRadius: "10px",
-            fontWeight: "bold",
-          }}
-        >
-          Connect Wallet
-        </button>
-      </nav>
-
-      <section
+      <h2
         style={{
-          display: "grid",
-          gridTemplateColumns: "1fr",
-          gap: "30px",
+          fontSize: "60px",
+          marginTop: "40px",
+          maxWidth: "700px",
         }}
       >
-        <div>
-          <h2
-            style={{
-              fontSize: "55px",
-              maxWidth: "700px",
-              lineHeight: "1.1",
-            }}
-          >
-            Buy Bitcoin. Hold Secure. Grow With Confidence.
-          </h2>
+        Buy Bitcoin. Hold Secure. Grow With Confidence.
+      </h2>
 
-          <p
-            style={{
-              color: "#9ca3af",
-              maxWidth: "600px",
-              marginTop: "20px",
-              fontSize: "20px",
-            }}
-          >
-            Secure Bitcoin platform with wallet connection and dashboard.
-          </p>
+      <p
+        style={{
+          color: "#9ca3af",
+          fontSize: "22px",
+          maxWidth: "700px",
+        }}
+      >
+        Secure Bitcoin tracking dashboard with wallet connection.
+      </p>
 
-          <button
-            style={{
-              marginTop: "25px",
-              background: "#f59e0b",
-              color: "black",
-              border: "none",
-              padding: "15px 30px",
-              borderRadius: "12px",
-              fontWeight: "bold",
-              fontSize: "18px",
-            }}
-          >
-            Start Now
-          </button>
-        </div>
+      <div
+        style={{
+          background: "#111827",
+          padding: "30px",
+          borderRadius: "20px",
+          marginTop: "40px",
+        }}
+      >
+        <h2>Dashboard</h2>
 
-        <div
-          style={{
-            background: "#111827",
-            padding: "25px",
-            borderRadius: "20px",
-            marginTop: "30px",
-          }}
-        >
-          <h2 style={{ marginBottom: "20px" }}>Dashboard</h2>
+        <h3>Total Bitcoin</h3>
+        <h1 style={{ color: "#f59e0b" }}>0.532 BTC</h1>
 
-          <h3>Total Bitcoin</h3>
-          <h1 style={{ color: "#f59e0b" }}>0.532 BTC</h1>
+        <h3>Current BTC Price</h3>
+        <h1>$64,892</h1>
 
-          <h3 style={{ marginTop: "20px" }}>Current BTC Price</h3>
-          <h1>$64,892</h1>
-
-          <h3 style={{ marginTop: "20px", color: "lightgreen" }}>
-            +2.35% (24h)
-          </h3>
-        </div>
-      </section>
-    </main>
+        <h3 style={{ color: "lightgreen" }}>+2.35%</h3>
+      </div>
+    </div>
   );
 }
