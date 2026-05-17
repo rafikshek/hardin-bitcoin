@@ -1,31 +1,42 @@
+"use client";
+
 export default function Home() {
   return (
-    <div style={{
-      background:"#050816",
-      minHeight:"100vh",
-      color:"white",
-      padding:"40px"
-    }}>
-      <h1 style={{color:"#f59e0b"}}>
+    <main
+      style={{
+        background: "#050816",
+        color: "white",
+        minHeight: "100vh",
+        padding: "40px",
+        fontFamily: "Arial",
+      }}
+    >
+      <h1 style={{ color: "#f59e0b", fontSize: "60px" }}>
         HardinBitcoin
       </h1>
 
-      <h2>
-        Buy Bitcoin. Hold Secure.
+      <h2 style={{ fontSize: "42px", maxWidth: "700px" }}>
+        Buy Bitcoin. Hold Secure. Grow With Confidence.
       </h2>
 
-      <p>
-        Modern Bitcoin dashboard website.
+      <p style={{ color: "#9ca3af", maxWidth: "600px" }}>
+        Secure Bitcoin platform with wallet connection.
       </p>
 
-      <button style={{
-        background:"#f59e0b",
-        padding:"12px 20px",
-        border:"none",
-        borderRadius:"10px"
-      }}>
+      <button
+        style={{
+          marginTop: "20px",
+          background: "#f59e0b",
+          color: "black",
+          border: "none",
+          padding: "15px 30px",
+          borderRadius: "10px",
+          fontWeight: "bold",
+          fontSize: "18px",
+        }}
+      >
         Connect Wallet
       </button>
-    </div>
+    </main>
   );
 }
