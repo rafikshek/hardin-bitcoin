@@ -1,7 +1,10 @@
+
 export const metadata = {
   title: "HardinBitcoin",
-  description: "Buy Bitcoin easily",
+  description: "Secure Bitcoin Platform",
 };
+
+import "./globals.css";
 
 export default function RootLayout({ children }) {
   return (
